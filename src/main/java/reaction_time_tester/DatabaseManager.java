@@ -1,8 +1,5 @@
 package reaction_time_tester;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

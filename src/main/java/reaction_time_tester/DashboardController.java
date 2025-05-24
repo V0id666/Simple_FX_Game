@@ -5,9 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-//import model.Player;
 import java.sql.*;
-import java.io.IOException;
+
 
 public class DashboardController {
     private Player player;
@@ -52,10 +51,9 @@ public class DashboardController {
     private void startGame(String mode) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/reaction_time_tester/Game.fxml"));
-//            Scene scene = new Scene(loader.load());
-            Scene scene = new Scene(loader.load(), 600, 400); // width = 600, height = 400
+            Scene scene = new Scene(loader.load(), 600, 400);
             GameController controller = loader.getController();
-            controller.setupGame(player, mode); //setupGame
+            controller.setupGame(player, mode);
             Stage stage = (Stage) welcomeLabel.getScene().getWindow();
             stage.setScene(scene);
         } catch (Exception e) {

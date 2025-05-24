@@ -13,9 +13,17 @@ public class Result {
         this.attempts = attempts;
     }
 
-    public String getMode() { return mode; }
-    public double getAverageTime() { return averageTime; }
-    public double getFastestTime() { return fastestTime; }
-    public int getAttempts() { return attempts; }
+    public String getMode() {
+        return mode;
+    }
+    public double getAverageTime() {
+        return averageTime;
+    }
+    public double getFastestTime() {
+        return fastestTime;
+    }
+    public int getAttempts() {
+        return attempts;
+    }
 }
 

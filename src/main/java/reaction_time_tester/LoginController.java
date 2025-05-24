@@ -7,12 +7,10 @@ import javafx.scene.Parent;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.io.IOException;
 
 public class LoginController {
     @FXML private TextField usernameField;
@@ -78,8 +76,7 @@ public class LoginController {
         controller.setPlayer(player);
 
         Stage stage = (Stage) usernameField.getScene().getWindow();
-//        stage.setScene(new Scene(root));
-        stage.setScene(new Scene(root, 300, 200)); // Or whatever size you prefer
+        stage.setScene(new Scene(root, 300, 200));
         stage.show();
     }
 
