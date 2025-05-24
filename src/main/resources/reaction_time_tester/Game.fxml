@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.*?>
+
+<StackPane fx:controller="reaction_time_tester.GameController"
+           xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:id="rootPane">
+    <!-- UI Elements here -->
+    <VBox alignment="CENTER" spacing="10">
+        <Label fx:id="infoLabel" text="Get Ready..." />
+        <Button fx:id="clickButton" text="Click!" onAction="#handleClick" />
+    </VBox>
+</StackPane>

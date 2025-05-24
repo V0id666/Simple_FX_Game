@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="reaction_time_tester.DashboardController"
+      spacing="10" alignment="CENTER">
+
+    <Label text="Welcome! Select a Difficulty" fx:id="welcomeLabel" />
+    <HBox spacing="10">
+        <Button text="Easy" onAction="#startEasy" />
+        <Button text="Medium" onAction="#startMedium" />
+        <Button text="Hard" onAction="#startHard" />
+    </HBox>
+    <Label text="--- Your Last Game Results ---" />
+    <Label fx:id="statsLabel" wrapText="true" maxWidth="300" />
+</VBox>
